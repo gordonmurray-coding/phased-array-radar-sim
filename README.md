@@ -69,3 +69,5 @@ run_preset('wide_beam_low_elements')
 run_preset('fast_scan_az45')
 run_preset('long_range_high_prf')
 
+Override parameters on the fly: Radar_theoretical_max_accuracy_formulas_waveforms('preset','high_res_range','scanAz_deg',15)
+
