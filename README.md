@@ -59,3 +59,13 @@ Edit near the top of `matlab/Radar_theoretical_max_accuracy_formulas_waveforms.m
 | Range–Doppler | Summary |
 |---|---|
 | ![rd](docs/range_doppler.png) | ![summary](docs/summary.png) |
+
+## Presets
+
+Use built-in presets for quick scenarios:
+```matlab
+run_preset('high_res_range')
+run_preset('wide_beam_low_elements')
+run_preset('fast_scan_az45')
+run_preset('long_range_high_prf')
+
