@@ -45,3 +45,17 @@ Edit near the top of `matlab/Radar_theoretical_max_accuracy_formulas_waveforms.m
 ## Notes
 - `results/` is git‑ignored to keep the repo small. Delete that rule if you want example outputs tracked.
 - HPBW from the FFT beampattern is reported in the Command Window and appended to `results/summary.txt`.
+
+---
+
+## CI status
+![smoke](https://github.com/gordonmurray-coding/phased-array-radar-sim/actions/workflows/smoke.yml/badge.svg)
+
+## Example results
+| Array face | u–v beampattern | Az cut (HPBW) |
+|---|---|---|
+| ![face](docs/face.png) | ![uv](docs/uv_beam.png) | ![cut](docs/fft_az_cut.png) |
+
+| Range–Doppler | Summary |
+|---|---|
+| ![rd](docs/range_doppler.png) | ![summary](docs/summary.png) |

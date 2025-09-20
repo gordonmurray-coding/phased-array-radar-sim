@@ -1,0 +1,22 @@
+name: smoke
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  octave-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Octave
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y octave
+
+      - name: Run selfcheck (no graphics)
+        run: |
+          octave-cli --version
+          octave-cli --eval "cd matlab; selfcheck; exit;"
